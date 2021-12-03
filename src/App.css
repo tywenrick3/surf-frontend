@@ -11,13 +11,48 @@
 	justify-content: space-between;
 }
 
-.Header nav a {
-	color: blueviolet;
-	text-decoration: none;
-	margin: 0 5px;
-}
-
 .HeaderWrapper {
 	border-bottom: 1px solid gray;
 	padding: 5px 0;
+}
+
+.Header nav a {
+	color: blueviolet;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 5px;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+.Header nav a:last-child {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.Form form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+.Form input {
+	margin-bottom: 30px;
+	padding: 10px 5px;
+}
+
+.UserCard {
+	border: 1px solid gray;
+	display: flex;
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.UserCardImage {
+	flex-basis: 50%;
+}
+
+.UserCardText {
+	flex-basis: 50%;
+	padding-left: 40px;
 }
