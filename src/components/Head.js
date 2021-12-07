@@ -1,10 +1,17 @@
 import React from 'react';
+import wavelogo from '../assets/wavelogo.png';
 
 function Head() {
 	return (
 		<header className='HeaderWrapper'>
 			<div className='Header PageWrapper'>
-				<h1>Logo</h1>
+				<img
+					classname='Logo'
+					alt='Logo'
+					src={wavelogo}
+					width='85'
+					height='auto'
+				/>
 				<nav>
 					<a href='/'>Dashboard</a>
 					<a href='/login'>Login</a>

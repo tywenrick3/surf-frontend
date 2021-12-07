@@ -5,8 +5,9 @@ import UserCard from '../components/UserCard';
 export const MOCK_DATA = [
 	{
 		imageAlt: 'alt text',
-		imageSrc: 'https://wallpaperaccess.com/full/5010955.jpg',
-		userMessage: 'Hi',
+		imageSrc:
+			'http://galaxypro.s3.amazonaws.com/spot-media/142/142-pipeline-surf-hawaii2.jpg',
+		userMessage: 'Stoked',
 		postId: '1',
 		userId: '123',
 		userName: 'Ty',
