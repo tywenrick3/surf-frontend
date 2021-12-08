@@ -28,7 +28,12 @@ function Head({ logout, loggedIn }) {
 							<a href='/'>Dashboard</a>
 							<a href='/user/:id'> My Profile</a>
 							<a href='/add-post'>Add Post</a>
-							<button onClick={() => logout()}>Log Out</button>
+							<button
+								className='button_slide slide_left'
+								onClick={() => logout()}
+							>
+								Log Out
+							</button>
 						</>
 					)}
 				</nav>

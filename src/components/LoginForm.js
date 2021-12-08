@@ -10,7 +10,9 @@ function LoginForm({ loginUser }) {
 				<label htmlFor='password'>Password</label>
 				<input type='password' name='password' placeholder='******' />
 
-				<button type='submit'>Login</button>
+				<button className='button_form slide_left' type='submit'>
+					Login
+				</button>
 			</form>
 		</div>
 	);
