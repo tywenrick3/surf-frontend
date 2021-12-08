@@ -1,3 +1,4 @@
+// TODO: Add env variables
 const FirebaseConfig = {
 	apiKey: 'AIzaSyA2AJBUmRoyxWZOaWC9Sw_XU0IoMPq4x30',
 	authDomain: 'final-project-fall-2021-tyw.firebaseapp.com',
