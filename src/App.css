@@ -12,7 +12,7 @@
 }
 
 .HeaderWrapper {
-	border-bottom: 1px solid rgb(0, 209, 252);
+	/*border-bottom: 1px solid rgb(0, 209, 252);*/
 	padding: 5px 0;
 }
 
@@ -23,6 +23,10 @@
 	margin: 0 5px;
 	padding: 0 5px;
 	text-decoration: none;
+}
+
+.Header nav a:active {
+	color: rgb(0, 207, 252);
 }
 
 .Header nav a:last-child {

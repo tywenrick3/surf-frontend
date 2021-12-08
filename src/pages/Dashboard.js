@@ -12,6 +12,24 @@ export const MOCK_DATA = [
 		userId: '123',
 		userName: 'Ty',
 	},
+	{
+		imageAlt: 'alt text',
+		imageSrc:
+			'https://frothers.com.au/wp-content/uploads/2014/11/seandavey004-1.jpg',
+		userMessage: 'Another!',
+		postId: '1',
+		userId: '123',
+		userName: 'Ty',
+	},
+	{
+		imageAlt: 'alt text',
+		imageSrc:
+			'https://spot-thumbnails.cdn-surfline.com/spots/584204214e65fad6a7709cdf/584204214e65fad6a7709cdf_1500.jpg',
+		userMessage: 'Sets',
+		postId: '1',
+		userId: '123',
+		userName: 'Ty',
+	},
 ];
 function Dashboard() {
 	// Display all posts
