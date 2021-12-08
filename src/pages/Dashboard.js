@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 // Components
 import UserCard from '../components/UserCard';
 
@@ -31,12 +32,31 @@ export const MOCK_DATA = [
 		userName: 'Ty',
 	},
 ];
+// Once deployed will be heroku
+const url = `http://localhost:4000`;
+
 function Dashboard() {
+	const [users, setUsers] = useState([]);
 	// Display all posts
+
+	useEffect(() => {
+		// Get All users
+		axios
+			.get(url)
+			.then(function (response) {
+				console.log({ response });
+				setUsers(response.data);
+			})
+			.catch(function (error) {
+				//handle error
+				console.warn(error);
+			});
+	}, []);
+
 	return (
 		<div className='PageWrapper'>
 			<h1>Dashboard</h1>
-			{MOCK_DATA.map((user, i) => (
+			{users.map((user, i) => (
 				<UserCard user={user} key={i} />
 			))}
 		</div>
