@@ -5,17 +5,14 @@ function Head({ logout, loggedIn }) {
 	return (
 		<header className='HeaderWrapper'>
 			<div className='Header PageWrapper'>
-				<div className='Logo'>
-					<a href='/'>
-						<img
-							className='LogoImage'
-							alt='Logo'
-							src={wavelogo}
-							width='100'
-							height='auto'
-						/>
-					</a>
-				</div>
+				<a href='/'>
+					<img
+						lassname='logo'
+						width='70'
+						height='auto'
+						src={wavelogo}
+					></img>
+				</a>
 				<nav>
 					{!loggedIn && (
 						<>
@@ -25,9 +22,9 @@ function Head({ logout, loggedIn }) {
 					)}
 					{loggedIn && (
 						<>
-							<a href='/'>Dashboard</a>
-							<a href='/user/:id'> My Profile</a>
-							<a href='/add-post'>Add Post</a>
+							<a href='/'>Surf</a>
+							<a href='/user/:id'>Profile</a>
+							<a href='/add-post'>New+</a>
 							<button
 								className='button_slide slide_left'
 								onClick={() => logout()}

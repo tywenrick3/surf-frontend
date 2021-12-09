@@ -55,7 +55,7 @@ function Dashboard() {
 
 	return (
 		<div className='PageWrapper'>
-			<h1>Dashboard</h1>
+			<h1>Surf</h1>
 			{users.map((user, i) => (
 				<UserCard user={user} key={i} />
 			))}

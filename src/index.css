@@ -16,7 +16,7 @@ figure,
 blockquote,
 dl,
 dd {
-	font-family: Arial;
+	font-family: 'Readex Pro', sans-serif;
 	margin: 0;
 }
 
@@ -36,6 +36,7 @@ body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 }
 
 /* A elements that don't have a class get default styles */

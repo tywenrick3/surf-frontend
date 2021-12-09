@@ -1,10 +1,10 @@
 .button_slide {
 	color: black;
 	border: 2px solid rgb(0, 207, 252);
-	border-radius: 0px;
+	border-radius: 8px;
 	padding: 5px 10px;
 	display: inline-block;
-	font-family: Arial;
+	font-family: 'Readex Pro', sans-serif;
 	font-style: bold;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -18,10 +18,10 @@
 .button_form {
 	color: black;
 	border: 2px solid rgb(0, 207, 252);
-	border-radius: 0px;
+	border-radius: 8px;
 	padding: 6px 12px;
 	display: inline-block;
-	font-family: Arial;
+	font-family: 'Readex Pro', sans-serif;
 	font-style: bold;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -56,15 +56,16 @@
 }
 
 .Header nav a {
-	color: rgb(16, 75, 248);
+	color: white;
 	font-size: 16px;
+	font-family: 'Readex Pro', sans-serif;
 	font-weight: bold;
 	margin: 0 5px;
 	padding: 0 5px;
 	text-decoration: none;
 }
 
-.Header nav a:active {
+.Header nav a:hover {
 	color: rgb(0, 207, 252);
 }
 
@@ -82,10 +83,13 @@
 .Form input {
 	margin-bottom: 30px;
 	padding: 10px 5px;
+	border-radius: 8px;
 }
 
 .UserCard {
-	border: 1px solid rgb(0, 209, 252);
+	color: white;
+	border-radius: 8px;
+	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 	display: flex;
 	margin: 20px 0;
 	padding: 10px;

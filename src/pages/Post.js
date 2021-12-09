@@ -3,7 +3,7 @@ import React from 'react';
 function Post() {
 	return (
 		<div className='PageWrapper'>
-			<h1>Post</h1>
+			<h1>test</h1>
 		</div>
 	);
 }
