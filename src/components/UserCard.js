@@ -14,7 +14,7 @@ function UserCard({ user }) {
 					<a href={`/user/${user.userId}`}>{user.userName}</a>
 				</p>
 				<p>
-					<a href={`/post/${user.postId}`}>View Post</a>
+					<a href={`/post/${user.id}`}>View Post</a>
 				</p>
 			</div>
 		</div>

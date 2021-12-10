@@ -22,6 +22,9 @@ import './App.css';
 // Config
 import FirebaseConfig from './components/FirebaseConfig';
 
+export const baseUrl =
+	process.env.REACT_APP_BACKEND_URL || `http://localhost:4000`;
+
 function App() {
 	// Track if user is logged in
 	const [loggedIn, setLoggedIn] = useState(false);
@@ -32,6 +35,7 @@ function App() {
 	const [appInitialized, setAppInitialized] = useState(false);
 	// Error
 	const [errors, setErrors] = useState();
+	console.warn(errors);
 
 	useEffect(() => {
 		initializeApp(FirebaseConfig);
@@ -104,7 +108,11 @@ function App() {
 					<Route
 						path='/add-post'
 						element={
-							loggedIn ? <AddPost /> : <Navigate to='/login' />
+							loggedIn ? (
+								<AddPost userInformation={userInformation} />
+							) : (
+								<Navigate to='/login' />
+							)
 						}
 					/>
 					<Route
