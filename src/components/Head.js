@@ -1,7 +1,7 @@
 import React from 'react';
 import wavelogo from '../assets/wavelogo.png';
 
-function Head({ logout, loggedIn }) {
+function Head({ userInformation, logout, loggedIn }) {
 	return (
 		<header className='HeaderWrapper'>
 			<div className='Header PageWrapper'>
@@ -24,7 +24,9 @@ function Head({ logout, loggedIn }) {
 					{loggedIn && (
 						<>
 							<a href='/'>Surf</a>
-							<a href='/user/:id'>Profile</a>
+							<a href={`/user/${userInformation.uid}`}>
+								{userInformation.displayName}
+							</a>
 							<a href='/add-post'>New+</a>
 							<button
 								className='button_slide slide_left'
