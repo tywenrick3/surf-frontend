@@ -11,7 +11,7 @@ function UserCard({ user }) {
 				<p>{user.userMessage}</p>
 				<p>
 					Posted by:
-					<a href={`/user/${user.userId}`}> {user.userName}</a>
+					<a href={`/user/${user.userId}`}> {user.displayName}</a>
 				</p>
 				<p>
 					<a href={`/post/${user.id}`}>View Post</a>
