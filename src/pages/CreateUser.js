@@ -10,20 +10,22 @@ function CreateUser({ setErrors, setLoggedIn, setUserInformation }) {
 
 			const email = e.currentTarget.email.value;
 			const password = e.currentTarget.password.value;
-			const displayName = e.currentTarget.displayName.value;
+			const name = e.currentTarget.displayName.value;
 			const auth = getAuth();
 
 			// TODO: hookup displayname
 			createUserWithEmailAndPassword(auth, email, password)
 				.then((userCredential) => {
 					const user = userCredential.user;
+					user.displayName = name;
 					setLoggedIn(true);
 					setUserInformation({
-						email: user.email,
 						displayName: user.displayName,
+						email: user.email,
 						uid: user.uid,
 						accessToken: user.accessToken,
 					});
+					console.log({ user });
 					setErrors();
 				})
 				.catch((error) => {

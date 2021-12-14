@@ -81,9 +81,13 @@
 }
 
 .Form input {
+	margin: 10px 0;
 	margin-bottom: 30px;
 	padding: 10px 5px;
+	border: 0;
 	border-radius: 8px;
+	border-bottom: 1px solid #eee;
+	width: 100%;
 }
 
 .UserCard {

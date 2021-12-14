@@ -1,6 +1,7 @@
 import React from 'react';
 
 function UserCard({ user }) {
+	console.log({ user });
 	return (
 		<div className='UserCard'>
 			<div className='UserCardImage'>
@@ -10,8 +11,8 @@ function UserCard({ user }) {
 			<div className='UserCardText'>
 				<p>{user.userMessage}</p>
 				<p>
-					Posted by:{' '}
-					<a href={`/user/${user.userId}`}>{user.userName}</a>
+					Posted by: {user.displayName}
+					<a href={`/user/${user.userId}`}>{user.displayName}</a>
 				</p>
 				<p>
 					<a href={`/post/${user.id}`}>View Post</a>

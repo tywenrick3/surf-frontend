@@ -7,9 +7,10 @@ function Head({ logout, loggedIn }) {
 			<div className='Header PageWrapper'>
 				<a href='/'>
 					<img
-						lassname='logo'
+						className='logo'
 						width='70'
 						height='auto'
+						alt='logo'
 						src={wavelogo}
 					></img>
 				</a>

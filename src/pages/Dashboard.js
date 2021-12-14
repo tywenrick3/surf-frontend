@@ -13,7 +13,6 @@ function Dashboard() {
 		axios
 			.get(baseUrl)
 			.then(function (response) {
-				console.log({ response });
 				setUsers(response.data);
 			})
 			.catch(function (error) {
