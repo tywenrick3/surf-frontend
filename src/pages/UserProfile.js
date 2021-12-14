@@ -10,14 +10,12 @@ function UserProfile({ userInformation }) {
 	const [users, setUsers] = useState([]);
 	const [profileName, setProfileName] = useState();
 	let { uid } = useParams();
-	console.log(uid);
-	console.log({ userInformation });
+
 	useEffect(() => {
 		// Get all of a users posts
 		axios
 			.get(`${baseUrl}/profile/${uid}`)
 			.then(function (response) {
-				console.log({ response });
 				setUsers(response.data);
 				setProfileName(response.data[0].userName);
 			})

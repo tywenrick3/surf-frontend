@@ -1,7 +1,6 @@
 import React from 'react';
 
 function UserCard({ user }) {
-	console.log({ user });
 	return (
 		<div className='UserCard'>
 			<div className='UserCardImage'>

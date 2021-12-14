@@ -16,7 +16,7 @@ function AddPost({ userInformation }) {
 		const userName = userInformation.displayName;
 		const userId = userInformation.uid;
 
-		const url = `${baseUrl}/create?userMessage=${userMessage}&imageSrc=${imageSrc}&imageAlt=${imageAlt}&userName=${userName}&userId=${userId}`;
+		const url = `${baseUrl}/create?userMessage=${userMessage}&imageSrc=${imageSrc}&imageAlt=${imageAlt}&displayName=${userName}&userId=${userId}`;
 
 		axios
 			.get(url)
