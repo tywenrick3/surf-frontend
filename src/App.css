@@ -42,6 +42,7 @@
 	max-width: 1140px;
 	padding-left: 25px;
 	padding-right: 25px;
+	color: #0083e1;
 }
 
 .Header {
@@ -106,4 +107,14 @@
 .UserCardText {
 	flex-basis: 50%;
 	padding-left: 40px;
+}
+
+.UserCardText a {
+	color: white;
+	text-decoration: none;
+}
+
+.UserCardText a:hover {
+	text-decoration: none;
+	color: rgb(0, 207, 252);
 }

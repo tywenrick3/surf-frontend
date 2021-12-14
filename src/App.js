@@ -13,7 +13,7 @@ import AddPost from './pages/AddPost';
 import CreateUser from './pages/CreateUser';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
-import Post from './pages/AddPost';
+import Post from './pages/Post';
 import UserProfile from './pages/UserProfile';
 // Components
 import Head from './components/Head';

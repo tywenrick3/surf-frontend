@@ -25,7 +25,7 @@ function Post() {
 	return (
 		<div className='PageWrapper'>
 			<h1>Post</h1>
-			<UserCard post={singlePost} />
+			<UserCard user={singlePost} />
 		</div>
 	);
 }

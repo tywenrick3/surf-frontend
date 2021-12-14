@@ -11,8 +11,8 @@ function UserCard({ user }) {
 			<div className='UserCardText'>
 				<p>{user.userMessage}</p>
 				<p>
-					Posted by: {user.displayName}
-					<a href={`/user/${user.userId}`}>{user.displayName}</a>
+					Posted by:
+					<a href={`/user/${user.userId}`}> {user.userName}</a>
 				</p>
 				<p>
 					<a href={`/post/${user.id}`}>View Post</a>
