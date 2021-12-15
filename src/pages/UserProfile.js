@@ -17,13 +17,14 @@ function UserProfile({ userInformation }) {
 			.get(`${baseUrl}/profile/${uid}`)
 			.then(function (response) {
 				setUsers(response.data);
-				setProfileName(response.data[0].userName);
+				setProfileName(response.data[0].displayName);
 			})
 			.catch(function (error) {
 				//handle error
 				console.warn(error);
 			});
 	}, [uid]);
+	console.log(profileName);
 
 	return (
 		<div className='PageWrapper'>
